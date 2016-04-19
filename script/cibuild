@@ -4,9 +4,7 @@ set -e # halt script on error
 
 title() {
     echo
-    echo "-------------------------------"
-    echo "$1"
-    echo "-------------------------------"
+    echo " --------------------------  $1"
     echo
 }
 
@@ -18,19 +16,19 @@ script/branding
 # script/remark
 
 #2
-title "checking site"
+title "CHECK SITE"
 #JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true bundle exec rake
 JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" bundle exec rake
 
 #3
-title "checking ruby"
+title "CHECK RUBY"
 bundle exec rubocop -D -S
 
 #4
-title "checking DNS"
+title "CHECK DNS"
 bundle exec github-pages health-check
 
-title "cleaning up"
+title "CLEANUP"
 rm -Rf _site
 
 
