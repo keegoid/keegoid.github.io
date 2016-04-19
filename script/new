@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Creates a new post with today's date
+# Usage: script/new [post-slug]
+
+# from slugify import slugify
+set -e
+
+pip list | grep -w python-slugify >/dev/null 2>&1 && sudo -H pip install python-slugify
+
+# convert from slug to title
+# file="_posts/$date-$1.md"
+# title=${1//-/ }
+
+# convert from title to slug
+slug=$(python script/slug.py "$1")
+file="_drafts/$(date +"%Y-%m-%d")-${slug}.md"
+
+# git checkout -b "$slug"
+
+cat << EOF >> "$file"
+---
+layout: post
+title:  "$1"
+author: Keegan Mullaney
+date: $(date +"%Y-%m-%d %H:%M:%S %z")
+description:
+tags: $2
+---
+
+EOF
+
+# git add "$file"
+# git commit -m "create $file"
+
+subl "$file"

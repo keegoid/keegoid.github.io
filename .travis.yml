@@ -1,0 +1,24 @@
+# before_install: npm install
+before_script: 'chmod +x script/cibuild'
+  # - 'echo "branch: $TRAVIS_BRANCH" >> _config_test.yml'
+  # - 'sed -i "s/master/$TRAVIS_BRANCH/g" _config_test.yml'
+# bundler_args: --without benchmark:site:development
+before_script: chmod +x script/cibuild
+script: script/cibuild
+cache: bundler
+language: ruby
+sudo: false
+rvm: 2.1.7
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+branches:
+  only:
+  - master
+# report results
+#addons:
+#  code_climate:
+#    repo_token: 1b5b79c60cc9e7dff806178d88eb861a0855308536db2c38b50004d89b1e2ad9
+notifications:
+  slack:
+    secure: btqNQpfs2eQrGJQTD67mce4V1qQUMWaFoIt+1EzN5ZHbWcC+TJ6iNL059JVL0+5M4eThBjuNXM7AoQ0bqhatVrJ0DHpUadsG6trFWH0u+RhcEr1s2m4RfWNJVLi2hYCADmq9GwLMhLo9Cz4gqBZzHGyjfDEQAeVAIYDSFnMq+36EinC4t/MsKeRx6Q6prUdnVfIwjuzVgXXEhHxXPGQ6JhqU/DXTrxWBi/18nGT4v6Gz0qlljw3jMW24U6ImNLs7xWcSm3fLwbVWsoRByWHoD5Igr4XMTibzytSyEI27pKht6ywI5OFo8drzOYkO0WFIyaQVkLLSaV6lO2OJrwEEuzytDg9HHbfMurJDjAsC8RziIpAYnoed3W/E4XYFm0aFtPDYTt7L8LgwlhWMvJJfi7I3Co1wJq3bq5SwcrjePAcFMdnEQVY+74P6VbVhsRCft7npyMCEhReu5i6grLggbDiBc3QX8Fqn/v6v1AY2lgNb91rZj4qQubn3Jp16kRVTMdiTZL7jZmXGEAzux34yAZjnEnfCe937VbMyeVA2exaescX0QsnhosTAPe1NmuQ7p0RAlktcPbcln5W8ZNl2plLlkQco3dl412TBc7FrVi15KGTv22OtMmLM+k7fzisefS5w3NnoxkaJL+dvSkypUELDQNJ06zFhx1OjPgmdSWw=

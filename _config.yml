@@ -5,17 +5,115 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Jekyll site for public writing on keegoid.com.
 
-# Build settings
-markdown: kramdown
+# Site settings
+name: Keegan Mullaney
+title: Keegoid
+email: keeganmullaney@gmail.com
+description: > # this means to ignore newlines
+  The open source / public writing site for Keegan Mullaney.
+author: keegoid
+repository: keegoid/keegoid.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# frontmatter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+      author: keegoid
+      permalink: "/:categories/:title/"
+
+# RDFa structured data
+job_title: IT Administrator
+employer: KM Authorized LLC
+url: "http://keegoid.github.io"
+location:
+  city: Chongqing
+  province: Chongqing
+  country: China
+
+# disqus:
+#   shortname: 'keegoid'
+#   count: 5
+#   api_key: ""
+
+# gravatar_id: ea353bd28baa1aefaefae736a19fcf2a
+logo: /assets/img/headshot.jpg
+
+twitter_username: keegoid
+github_username:  keegoid
+
+# plugin config
+twitter:
+  username: "@keegoid"
+#ga_username: 'UA-18088627-1'
+# google_site_verification:
+
+# jekyll-mentions:
+  # base_url: https://twitter.com
+
+# Social metadata (JSON-LD)
+# social:
+#   name: Keegoid
+#   - https://github.com/keegoid
+#   - https://twitter.com/keegoid
+#   - https://keybase.io/keegoid
+
+# SEO YAML front matter
+# title - The title of the post, page, or document
+# description - A short description of the page's content
+# image - Relative URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jpg)
+# author - Page-, post-, or document-specific author information
+
+# build config
+timezone: Asia/Shanghai
+branch: master
+permalink: pretty
+rss_limit: 10
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# GitHub Pages settings
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
+gist:
+  noscript: false
+
+# Jekyll plugins compatible with GitHub Pages
+gems:
+  - github-pages-health-check
+  - jemoji
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+#files to exclude, array
+exclude:
+  - CONTRIBUTING.md
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - script
+  - vendor
+  - node_modules
+  - Rakefile
+  # - src
+  # - ".bundle"
