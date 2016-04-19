@@ -25,7 +25,7 @@ def build_site
 end
 
 def doctor_site
-  sh 'bundle exec jekyll doctor --config _config.yml,_config_test.yml --drafts'
+  sh 'bundle exec jekyll doctor'
 end
 
 def html_proofer
