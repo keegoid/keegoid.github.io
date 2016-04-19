@@ -2,6 +2,7 @@ url: ""
 
 proofer:
   url_ignore:
+    - "#"
     - "#comments"
     - !ruby/regexp '/https?:\/\/(www)?\.youtube\.com\/watch\?v=.*/i'
     - http://keegoid.github.io/404/
