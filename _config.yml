@@ -104,7 +104,11 @@ gems:
 
 #files to exclude, array
 exclude:
+  - ".bundle"
+  - bundle
+  - node_modules
   - script
+  - src
   - vendor
   - CNAME
   - CONTRIBUTING.md
@@ -114,3 +118,4 @@ exclude:
   - README.md
   - Rakefile
   - gulpfile.js
+  - package.json
