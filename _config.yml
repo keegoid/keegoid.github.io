@@ -104,11 +104,11 @@ gems:
 
 #files to exclude, array
 exclude:
-  - ".bundle"
-  - bundle
+  # - ".bundle"
+  # - bundle
   - node_modules
   - script
-  - src
+  # - src
   - vendor
   - CNAME
   - CONTRIBUTING.md
