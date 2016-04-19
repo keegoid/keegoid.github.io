@@ -1,5 +1,5 @@
-keegoid.github.io
-=================
+keegoid.com
+===========
 
 [![Build Status](https://travis-ci.org/keegoid/keegoid.github.io.svg?branch=master)](https://travis-ci.org/keegoid/keegoid.github.io)
 
@@ -9,7 +9,7 @@ The concept of [writing in public][wip] or open source writing was inspired by [
 
 ## LICENSE
 
-   Code: [MIT](http://keegoid.mit-license.org)  
+   Code: [MIT](http://keegoid.mit-license.org)
 Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Content may include occasional contributions by others, which will be clearly indicated in the work's revision history.
