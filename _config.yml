@@ -105,6 +105,7 @@ gems:
 #files to exclude, array
 exclude:
   - script
+  - vendor
   - CNAME
   - CONTRIBUTING.md
   - Gemfile
