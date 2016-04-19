@@ -82,6 +82,7 @@ sass:
 
 # GitHub Pages settings
 github: [metadata]
+markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
@@ -103,17 +104,12 @@ gems:
 
 #files to exclude, array
 exclude:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE
+  - script
   - CNAME
+  - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
-  - gulpfile.js
-  - package.json
-  - script
-  - vendor
-  - node_modules
+  - LICENSE
+  - README.md
   - Rakefile
-  # - src
-  # - ".bundle"
+  - gulpfile.js
