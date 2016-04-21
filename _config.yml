@@ -12,7 +12,7 @@ name: Keegan Mullaney
 title: Keegoid
 email: keeganmullaney@gmail.com
 description: > # this means to ignore newlines
-  The open source / public writing site for Keegan Mullaney.
+  The open source website for Keegan Mullaney.
 author: keegoid
 repository: keegoid/keegoid.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
