@@ -15,9 +15,9 @@ script/branding
 # shellcheck disable=SC2155
 export JEKYLL_GITHUB_TOKEN=$(cat ~/.token)
 
-title "starting server"
+title "START SERVER"
 #JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true \
 JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" bundle exec jekyll serve -w --config _config.yml,_config_local.yml --drafts --incremental
 
-title "cleaning up"
+title "CLEARNUP"
 bundle exec jekyll clean
