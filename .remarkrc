@@ -19,6 +19,7 @@
   },
   "plugins": {
     "remark-yaml": {},
+    "remark-toc": {},
     "remark-squeeze-paragraphs": {},
     "remark-slug": {},
     "remark-heading-gap": {

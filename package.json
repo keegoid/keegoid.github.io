@@ -1,0 +1,36 @@
+{
+  "name": "keegoid.com",
+  "version": "1.0.0",
+  "description": "The open source website for Keegan Mullaney. [![Build Status](https://travis-ci.org/keegoid/keegoid.github.io.svg?branch=master)](https://travis-ci.org/keegoid/keegoid.github.io)",
+  "main": "script/server",
+  "scripts": {
+    "test": "script/cibuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keegoid/keegoid.github.io.git"
+  },
+  "author": "Keegan Mullaney",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/keegoid/keegoid.github.io/issues"
+  },
+  "homepage": "https://github.com/keegoid/keegoid.github.io#readme",
+  "devDependencies": {
+    "remark": "^4.2.1",
+    "remark-lint": "^3.2.0",
+    "remark-lint-code": "^1.0.0",
+    "remark-normalize-headings": "^0.3.0",
+    "remark-slug": "^4.1.0",
+    "remark-squeeze-paragraphs": "^3.0.0",
+    "remark-textr": "^2.0.1",
+    "remark-toc": "^3.0.0",
+    "remark-validate-links": "^3.0.0",
+    "remark-yaml": "^3.0.0"
+  },
+  "dependencies": {
+    "remark-heading-gap": "^2.0.0",
+    "remark-inline-links": "^3.0.0",
+    "remark-lint-no-empty-sections": "^1.0.0"
+  }
+}
