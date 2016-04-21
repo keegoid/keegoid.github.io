@@ -4,7 +4,8 @@
   "description": "The open source website for Keegan Mullaney. [![Build Status](https://travis-ci.org/keegoid/keegoid.github.io.svg?branch=master)](https://travis-ci.org/keegoid/keegoid.github.io)",
   "main": "script/server",
   "scripts": {
-    "test": "script/cibuild"
+    "test": "script/cibuild",
+    "new": "script/new"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/keegoid/keegoid.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
     "remark": "^4.2.1",
     "remark-lint": "^3.2.0",
     "remark-lint-code": "^1.0.0",
