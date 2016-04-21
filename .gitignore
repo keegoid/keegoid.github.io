@@ -1,4 +1,6 @@
 _site
+assets/vendor
 Gemfile.lock
 .sass-cache
 .jekyll-metadata
+node_modules
