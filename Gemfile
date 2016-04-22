@@ -9,7 +9,7 @@ ruby versions['ruby']
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-avatar'
 
-group :test, :development do
+group :test do
   # gem 'codeclimate-test-reporter', require: nil
   gem 'html-proofer'
   gem 'rake'
