@@ -73,6 +73,7 @@ twitter:
 
 # build config
 timezone: Asia/Shanghai
+lang: en-US
 branch: master
 permalink: pretty
 rss_limit: 10
