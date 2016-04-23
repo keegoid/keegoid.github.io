@@ -1,22 +1,31 @@
 {
-  "name": "keegoid.com",
+  "name": "keegoid",
   "version": "1.0.0",
-  "description": "The open source website for Keegan Mullaney. [![Build Status](https://travis-ci.org/keegoid/keegoid.github.io.svg?branch=master)](https://travis-ci.org/keegoid/keegoid.github.io)",
-  "main": "script/server",
+  "description": "Keegan Mullaney's open source writing. [![Build Status](https://travis-ci.org/keegoid/keegoid.github.io.svg?branch=master)](https://travis-ci.org/keegoid/keegoid.github.io)",
+  "author": "Keegan Mullaney <keeganmullaney@gmail.com>",
+  "contributors": [{
+    "name": "VenusGrape",
+    "email": "venusgrape17@gmail.com"
+  }],
   "scripts": {
     "test": "script/cibuild",
-    "new": "script/new"
+    "new": "script/new",
+    "server": "script/server"
   },
+  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keegoid/keegoid.github.io.git"
   },
-  "author": "Keegan Mullaney",
-  "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/keegoid/keegoid.github.io/issues"
   },
   "homepage": "https://github.com/keegoid/keegoid.github.io#readme",
+  "keywords": [
+    "keegoid",
+    "jekyll",
+    "open source writing"
+  ],
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "gulp": "^3.9.1",
@@ -39,5 +48,6 @@
     "remark-heading-gap": "^2.0.0",
     "remark-inline-links": "^3.0.0",
     "remark-lint-no-empty-sections": "^1.0.0"
-  }
+  },
+  "license": "CC-BY-SA-4.0"
 }
