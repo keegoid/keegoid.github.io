@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# --------------------------------------------
+# Install Node.js LTS via NVM
+#
+# Author : Keegan Mullaney
+# Website: keegoid.com
+# Email  : keeganmullaney@gmail.com
+# License: keegoid.mit-license.org
+# --------------------------------------------
+
+{ # this ensures the entire script is downloaded #
+
+# --------------------------  SETUP PARAMETERS
+
+[ -z "$QC_LTS" ] && QC_LTS=4
+
+# --------------------------  CUSTOM NODEJS INSTALL
+
+# install the long term support version of Node.js via NVM
+qc_nvm() {
+  local node_v
+  # install NVM
+  # curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+
+  # source nvm
+  # . ~/.nvm/nvm.sh
+
+  # make sure nvm is installed
+  # lkm_has nvm || lkm_error "nvm install failed"
+
+  # get long term support version
+  node_v=$(nvm ls-remote | grep "v${QC_LTS}.*" | tail -1 | tr -d ' ')
+
+  # install nodejs
+  nvm install "$node_v"
+
+  if [ $? -eq 0 ]; then
+    # nvm use "$node_v"
+    nvm alias default "$node_v"
+    npm build
+  fi
+
+  # check which node
+  which node
+  which npm
+
+  # check node and npm versions
+  node -v
+  npm -v
+}
+
+} # this ensures the entire script is downloaded #
