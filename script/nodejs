@@ -49,3 +49,5 @@ qc_nvm() {
   # install nodejs dependencies
   npm install
 }
+
+qc_nvm
