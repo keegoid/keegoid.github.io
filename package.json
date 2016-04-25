@@ -14,7 +14,7 @@
     "new": "script/new",
     "start": "script/server"
   },
-  "main": "gulpfile.js",
+  "main": "script/server",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keegoid/keegoid.github.io.git"
