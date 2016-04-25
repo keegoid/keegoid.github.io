@@ -1,5 +1,5 @@
-# before_install: npm install
-before_script: chmod +x script/*
+before_install: npm install
+# before_script: chmod +x script/*
   # - 'echo "branch: $TRAVIS_BRANCH" >> _config_test.yml'
   # - 'sed -i "s/master/$TRAVIS_BRANCH/g" _config_test.yml'
 # bundler_args: --without development
