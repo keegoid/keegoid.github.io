@@ -6,12 +6,10 @@ The concept of [writing in public][wip] or open source writing was inspired by [
 
 ## LICENSE
 
-Source code for Keegoid is released under the [MIT License][MIT].  
-Content for Keegoid is shared under the [CC BY-SA 4.0 License][CcBy-sa4.0].
+Source code for Keegoid is released under the [MIT License][mit].  
+Content for Keegoid is shared under the [CC BY-SA 4.0 License][ccbysa].
 
 Content may include occasional contributions by others, which will be clearly indicated in the work's revision history.
-
-
 
 [contri]:   https://github.com/keegoid/keegoid.github.io/blob/master/CONTRIBUTING.md
 [keegoid]:  http://keegoid.com/
@@ -21,5 +19,5 @@ Content may include occasional contributions by others, which will be clearly in
 [em]:       https://konklone.com
 [bb]:       http://ben.balter.com/
 [edit]:     http://ben.balter.com/2015/09/13/github-pages-edit-button/
-[CcBy-sa4.0]: https://creativecommons.org/licenses/by-sa/4.0/
-[MIT]: http://keegoid.mit-license.org
+[ccbysa]:   https://creativecommons.org/licenses/by-sa/4.0/
+[mit]:      http://keegoid.mit-license.org
