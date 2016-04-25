@@ -16,8 +16,11 @@ script/remark
 
 #2
 title "CHECK SITE"
-#JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true bundle exec rake
-JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" bundle exec rake
+if "$CI"; then
+  JEKYLL_GITHUB_TOKEN DISABLE_WHITELIST=true bundle exec rake
+else
+  JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true bundle exec rake
+fi
 
 #3
 title "CHECK RUBY"
