@@ -35,7 +35,6 @@ end
 
 task :test do
   if ENV['CI']
-    # config
     # coverage
     build_site
     doctor_site
