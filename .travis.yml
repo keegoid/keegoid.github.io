@@ -1,9 +1,10 @@
-before_install: "./script/nodejs"
 # before_script:
   # - 'echo "branch: $TRAVIS_BRANCH" >> _config_test.yml'
   # - 'sed -i "s/master/$TRAVIS_BRANCH/g" _config_test.yml'
 # bundler_args: --without development
-script: script/cibuild
+script:
+  - script/nodejs
+  - script/cibuild
 cache: bundler
 language: ruby
 rvm: 2.1.7
