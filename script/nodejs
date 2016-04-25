@@ -21,10 +21,10 @@ qc_nvm() {
   # curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 
   # source nvm
-  # . ~/.nvm/nvm.sh
+  . ~/.nvm/nvm.sh
 
   # make sure nvm is installed
-  # type nvm > /dev/null 2>&1 || { echo "nvm install failed"; return 1; }
+  type nvm > /dev/null 2>&1 || { echo "nvm not found"; return 1; }
 
   # get long term support version
   node_v=$(nvm ls-remote | grep "v${QC_LTS}.*" | tail -1 | tr -d ' ')
