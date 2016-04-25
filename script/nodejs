@@ -45,4 +45,7 @@ qc_nvm() {
   # check node and npm versions
   node -v
   npm -v
+
+  # install nodejs dependencies
+  npm install
 }
