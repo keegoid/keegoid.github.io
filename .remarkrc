@@ -50,14 +50,14 @@
       "fenced-code-flag": {
         "allowEmpty": true
       },
-      "emphasis-marker": "*",
+      "emphasis-marker": "_",
       "file-extension": "md",
       "heading-style": "atx",
       "ordered-list-marker-style": ".",
       "ordered-list-marker-value": "ordered",
       "rule-style": "---",
-      "strong-marker": "*",
-      "unordered-list-marker-style": "*",
+      "strong-marker": "_",
+      "unordered-list-marker-style": "-",
       "maximum-line-length": false,
       "list-item-indent": "space",
       "table-cell-padding": "padded",
