@@ -26,6 +26,11 @@
     "jekyll",
     "open source writing"
   ],
+  "dependencies": {
+    "remark-heading-gap": "^2.0.0",
+    "remark-inline-links": "^3.0.0",
+    "remark-lint-no-empty-sections": "^1.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "gulp": "^3.9.1",
@@ -43,11 +48,6 @@
     "remark-toc": "^3.0.0",
     "remark-validate-links": "^3.0.0",
     "remark-yaml": "^3.0.0"
-  },
-  "dependencies": {
-    "remark-heading-gap": "^2.0.0",
-    "remark-inline-links": "^3.0.0",
-    "remark-lint-no-empty-sections": "^1.0.0"
   },
   "license": "CC-BY-SA-4.0"
 }

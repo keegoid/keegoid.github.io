@@ -31,14 +31,8 @@
     },
     "remark-inline-links": {},
     "remark-textr": {
-      "options": {
-        "locale": "en-us"
-      },
-      "plugins": [
-        "typographic-em-dashes",
-        "typographic-en-dashes",
-        "typographic-single-spaces"
-      ]
+      "plugins": [ "typographic-base" ],
+      "options": { "locale": "en-us" }
     },
     "remark-lint": {
       "blockquote-indentation": 2,

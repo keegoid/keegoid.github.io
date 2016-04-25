@@ -4,6 +4,8 @@ set -e
 
 if "$CI"; then
   ./node_modules/.bin/remark --output --config-path .remarkrc --no-rc ./*.md ./*/**.md
+  # ./node_modules/.bin/remark --config-path .remarkrc --output ./*.md ./*/**.md
 else
   ./node_modules/.bin/remark --config-path .remarkrc --no-rc ./*.md ./*/**.md
+  # ./node_modules/.bin/remark --config-path .remarkrc ./*.md ./*/**.md
 fi
