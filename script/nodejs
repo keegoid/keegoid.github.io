@@ -6,6 +6,9 @@
 # Website: keegoid.com
 # Email  : keeganmullaney@gmail.com
 # License: keegoid.mit-license.org
+#
+# Derived from:
+# github.com/keegoid/qc
 # --------------------------------------------
 
 # --------------------------  SETUP PARAMETERS
@@ -17,9 +20,6 @@
 # install the long term support version of Node.js via NVM
 qc_nvm() {
   local node_v
-  # install NVM
-  # curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
-
   # source nvm
   . ~/.nvm/nvm.sh
 
@@ -33,17 +33,14 @@ qc_nvm() {
   nvm install "$node_v"
 
   if [ $? -eq 0 ]; then
-    # nvm use "$node_v"
     nvm alias default "$node_v"
-    npm build
   fi
 
-  # check which node
+  # check which node and npm
   which node
   which npm
 
-  # check node and npm versions
-  node -v
+  # check npm version
   npm -v
 
   # install nodejs dependencies
