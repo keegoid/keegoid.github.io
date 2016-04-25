@@ -48,9 +48,8 @@
     "remark-slug": "^4.1.0",
     "remark-squeeze-paragraphs": "^3.0.0",
     "remark-textr": "^2.0.1",
-    "remark-toc": "^3.0.0",
     "remark-validate-links": "^3.0.0",
-    "remark-yaml": "^3.0.0",
+    "remark-yaml": "^2.0.1",
     "typographic-base": "^1.0.4",
     "typographic-numbers": "^2.0.1"
   },
