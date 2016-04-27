@@ -36,7 +36,10 @@
       "validate-links": {}
     },
     "textr": {
-      "plugins": [ "typographic-base" ],
+      "plugins": [
+        "typographic-base",
+        "typographic-numbers"
+      ],
       "options": { "locale": "en-us" }
     },
     "lint": {
@@ -46,26 +49,26 @@
         "unchecked": " "
       },
       "code-block-style": "fenced",
+      "emphasis-marker": "_",
       "fenced-code-marker": "`",
       "fenced-code-flag": {
         "allowEmpty": true
       },
-      "emphasis-marker": "_",
       "file-extension": "md",
+      "first-heading-level": false,
       "heading-style": "atx",
+      "list-item-indent": "space",
+      "list-item-spacing": false,
+      "maximum-heading-length": false,
+      "maximum-line-length": false,
+      "no-html": false,
+      "no-literal-urls": false,
       "ordered-list-marker-style": ".",
       "ordered-list-marker-value": "ordered",
       "rule-style": "---",
       "strong-marker": "_",
-      "unordered-list-marker-style": "-",
-      "maximum-line-length": false,
-      "list-item-indent": "space",
       "table-cell-padding": "padded",
-      "no-literal-urls": false,
-      "list-item-spacing": false,
-      "first-heading-level": false,
-      "no-html": false,
-      "maximum-heading-length": false
+      "unordered-list-marker-style": "-"
     }
   }
 }
