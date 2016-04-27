@@ -1,5 +1,5 @@
 # for testing on Travis-CI
-url: "./_site"
+url: ""
 
 proofer:
   url_ignore:
