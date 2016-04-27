@@ -95,7 +95,7 @@ gems:
   - github-pages-health-check
   - jemoji
   - jekyll-avatar
-  - jekyll-feed, '0.4.0'
+  - jekyll-feed
   - jekyll-gist
   - jekyll-github-metadata
   - jekyll-mentions

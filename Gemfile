@@ -6,6 +6,7 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 ruby versions['ruby']
 
+gem 'jekyll-feed', '0.4.0'
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-avatar'
 
