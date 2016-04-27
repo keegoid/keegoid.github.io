@@ -24,8 +24,16 @@
     "position": true
   },
   "plugins": {
-    "validate-links": {},
     "inline-links": {},
+    "validate-links": {},
+    "normalize-headings": {},
+    "textr": {
+      "options": { "locale": "en-us" },
+      "plugins": [
+        "typographic-base",
+        "typographic-numbers"
+      ]
+    },
     "lint": {
       "external": ["remark-lint-code"],
       "external": ["remark-lint-no-empty-sections"],
@@ -56,14 +64,6 @@
       "strong-marker": "_",
       "table-cell-padding": "padded",
       "unordered-list-marker-style": "-"
-    },
-    "normalize-headings": {},
-    "textr": {
-      "options": { "locale": "en-us" },
-      "plugins": [
-        "typographic-base",
-        "typographic-numbers"
-      ]
     }
   }
 }
