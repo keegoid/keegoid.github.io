@@ -62,8 +62,8 @@
         "typographic-base",
         "typographic-numbers"
       ],
-      "options": { "locale": "en-us" }
+      "options": { "locale": "en-us" },
     },
     "validate-links": {},
-  }
+  },
 }
