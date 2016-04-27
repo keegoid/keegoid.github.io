@@ -6,6 +6,7 @@ The process of [editing a file in another user's repository][edit] is pretty sim
 
 If you have any questions, please [submit an issue][issue].
 
+
 [fork]:     https://help.github.com/articles/fork-a-repo
 [pull]:     https://help.github.com/articles/creating-a-pull-request
 [issue]:    https://github.com/keegoid/keegoid.github.io/issues/new

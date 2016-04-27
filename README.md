@@ -11,6 +11,7 @@ Content for Keegoid is shared under the [CC BY-SA 4.0 License][ccbysa].
 
 Content may include occasional contributions by others, which will be clearly indicated in the work's revision history.
 
+
 [keegoid]:  http://keegoid.com
 [gp]:       https://pages.github.com
 [src]:      http://keegoid.github.io
