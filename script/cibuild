@@ -18,8 +18,7 @@ script/remark
 title "CHECKING SITE"
 if "$CI"; then
   # set JGT as an environment variable on travis-ci.org website
-  # JEKYLL_GITHUB_TOKEN="$JGT" DISABLE_WHITELIST=true bundle exec rake
-  DISABLE_WHITELIST=true bundle exec rake
+  JEKYLL_GITHUB_TOKEN="$JGT" DISABLE_WHITELIST=true bundle exec rake
 else
   JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true bundle exec rake
 fi
