@@ -11,6 +11,7 @@ title() {
 
 script/branding
 
+# shellcheck disable=SC2155
 export JEKYLL_GITHUB_TOKEN=$(cat ~/.token)
 
 title "STARTING SERVER"
