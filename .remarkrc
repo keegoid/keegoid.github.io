@@ -43,6 +43,7 @@
       "file-extension": "md",
       "first-heading-level": false,
       "heading-style": "atx",
+      "link-title-style": '"',
       "list-item-indent": "space",
       "list-item-spacing": false,
       "maximum-heading-length": false,
