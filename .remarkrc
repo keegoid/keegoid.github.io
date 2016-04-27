@@ -48,7 +48,6 @@
       "list-item-spacing": false,
       "maximum-heading-length": false,
       "maximum-line-length": false,
-      "no-consecutive-blank-lines": false,
       "no-html": false,
       "no-literal-urls": false,
       "ordered-list-marker-style": ".",
