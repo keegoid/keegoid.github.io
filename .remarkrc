@@ -24,6 +24,7 @@
     "position": true
   },
   "plugins": {
+    "validate-links": {},
     "inline-links": {},
     "lint": {
       "external": ["remark-lint-code"],
