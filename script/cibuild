@@ -11,11 +11,11 @@ title() {
 script/branding
 
 #1
-title "CHECK MARKDOWN"
+title "CHECKING MARKDOWN"
 script/remark
 
 #2
-title "CHECK SITE"
+title "CHECKING SITE"
 if "$CI"; then
   # set JGT as an environment variable on travis-ci.org website
   JEKYLL_GITHUB_TOKEN="$JGT" DISABLE_WHITELIST=true bundle exec rake
@@ -24,12 +24,12 @@ else
 fi
 
 #3
-title "CHECK RUBY"
+title "CHECKING RUBY"
 bundle exec rubocop -D -S
 
 #4
-title "CHECK DNS"
+title "CHECKING DNS"
 bundle exec github-pages health-check
 
-title "CLEANUP"
-rm -Rf _site
+title "CLEANING UP"
+bundle exec jekyll clean
