@@ -9,8 +9,8 @@ proofer:
     - /edit/master/404.html
   check_html: true
 
-  # url: ""
 github:
+  url: "https://github.com/keegoid/keegoid.github.io"
   repository_nwo: "keegoid/keegoid.github.io"
   owner_url: "https://github.com/keegoid"
   repository_url: "https://github.com/keegoid/keegoid.github.io"
