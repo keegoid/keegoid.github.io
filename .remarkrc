@@ -24,20 +24,14 @@
     "position": true
   },
   "plugins": {
-    "heading-gap": {
-      "2": {
-        "before": '',
-        "after": ''
-      }
-    },
     "inline-links": {},
     "lint": {
       "external": ["remark-lint-code"],
       "external": ["remark-lint-no-empty-sections"],
       "blockquote-indentation": 2,
       "checkbox-character-style": {
-        "checked": "x",
-        "unchecked": " "
+        "checked": 'x',
+        "unchecked": ' '
       },
       "code-block-style": 'fenced',
       "emphasis-marker": '_',
@@ -48,7 +42,7 @@
       "file-extension": 'md',
       "first-heading-level": false,
       "heading-style": 'atx',
-      "link-title-style": '\"',
+      "link-title-style": '"',
       "list-item-indent": 'space',
       "list-item-spacing": false,
       "maximum-heading-length": false,
@@ -71,6 +65,7 @@
       ],
       "options": { "locale": "en-us" }
     },
-    "validate-links": {}
+    "validate-links": {},
+    "yaml": {}
   }
 }
