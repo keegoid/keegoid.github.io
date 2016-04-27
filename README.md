@@ -11,13 +11,13 @@ Content for Keegoid is shared under the [CC BY-SA 4.0 License][ccbysa].
 
 Content may include occasional contributions by others, which will be clearly indicated in the work's revision history.
 
-[keegoid]:  http://keegoid.com
-[gp]:       https://pages.github.com
-[src]:      http://keegoid.github.io
-[wip]:      https://konklone.com/post/writing-in-public-syncing-with-github
-[em]:       https://konklone.com
-[bb]:       http://ben.balter.com
-[edit]:     http://ben.balter.com/2015/09/13/github-pages-edit-button
-[ccbysa]:   https://creativecommons.org/licenses/by-sa/4.0
-[mit]:      http://keegoid.mit-license.org
+[keegoid]:  http://keegoid.com  
+[gp]:       https://pages.github.com  
+[src]:      http://keegoid.github.io  
+[wip]:      https://konklone.com/post/writing-in-public-syncing-with-github  
+[em]:       https://konklone.com  
+[bb]:       http://ben.balter.com  
+[edit]:     http://ben.balter.com/2015/09/13/github-pages-edit-button  
+[ccbysa]:   https://creativecommons.org/licenses/by-sa/4.0  
+[mit]:      http://keegoid.mit-license.org  
 [contri]:   https://github.com/keegoid/keegoid.github.io/blob/master/CONTRIBUTING.md
