@@ -1,4 +1,5 @@
-url: "https://github.com/keegoid/keegoid.github.io/tree/dev"
+# for testing on Travis-CI
+url: "./_site"
 
 proofer:
   url_ignore:
