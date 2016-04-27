@@ -24,17 +24,46 @@
     "position": true
   },
   "plugins": {
-    "yaml": {},
-    "inline-links": {},
-    "slug": {},
-    "squeeze-paragraphs": {},
     "heading-gap": {
       "2": {
-        "before": "",
-        "after": ""
-      },
-      "validate-links": {}
+        "before": '',
+        "after": ''
+      }
     },
+    "inline-links": {},
+    "lint": {
+      "external": ["remark-lint-code"],
+      "external": ["remark-lint-no-empty-sections"],
+      "blockquote-indentation": 2,
+      "checkbox-character-style": {
+        "checked": 'x',
+        "unchecked": ' '
+      },
+      "code-block-style": 'fenced',
+      "emphasis-marker": '_',
+      "fenced-code-flag": {
+        "allowEmpty": true
+      },
+      "fenced-code-marker": '`',
+      "file-extension": 'md',
+      "first-heading-level": false,
+      "heading-style": 'atx',
+      "link-title-style": '"',
+      "list-item-indent": 'space',
+      "list-item-spacing": false,
+      "maximum-heading-length": false,
+      "maximum-line-length": false,
+      "no-consecutive-blank-lines": false,
+      "no-html": false,
+      "no-literal-urls": false,
+      "ordered-list-marker-style": '.',
+      "ordered-list-marker-value": 'ordered',
+      "rule-style": '---',
+      "strong-marker": '_',
+      "table-cell-padding": 'padded',
+      "unordered-list-marker-style": '-'
+    },
+    "normalize-headings": {},
     "textr": {
       "plugins": [
         "typographic-base",
@@ -42,33 +71,6 @@
       ],
       "options": { "locale": "en-us" }
     },
-    "lint": {
-      "blockquote-indentation": 2,
-      "checkbox-character-style": {
-        "checked": "x",
-        "unchecked": " "
-      },
-      "code-block-style": "fenced",
-      "emphasis-marker": "_",
-      "fenced-code-marker": "`",
-      "fenced-code-flag": {
-        "allowEmpty": true
-      },
-      "file-extension": "md",
-      "first-heading-level": false,
-      "heading-style": "atx",
-      "list-item-indent": "space",
-      "list-item-spacing": false,
-      "maximum-heading-length": false,
-      "maximum-line-length": false,
-      "no-html": false,
-      "no-literal-urls": false,
-      "ordered-list-marker-style": ".",
-      "ordered-list-marker-value": "ordered",
-      "rule-style": "---",
-      "strong-marker": "_",
-      "table-cell-padding": "padded",
-      "unordered-list-marker-style": "-"
-    }
+    "validate-links": {}
   }
 }

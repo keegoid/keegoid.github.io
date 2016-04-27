@@ -29,9 +29,17 @@
     "open source writing"
   ],
   "dependencies": {
+    "remark": "^4.2.1",
     "remark-heading-gap": "^2.0.0",
     "remark-inline-links": "^3.0.0",
-    "remark-lint-no-empty-sections": "^1.0.0"
+    "remark-lint": "^3.2.0",
+    "remark-lint-code": "^1.0.0",
+    "remark-lint-no-empty-sections": "^1.0.0",
+    "remark-normalize-headings": "^0.3.0",
+    "remark-textr": "^2.0.1",
+    "remark-validate-links": "^3.0.0",
+    "typographic-base": "^1.0.4",
+    "typographic-numbers": "^2.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.12.4",
@@ -40,18 +48,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-textr": "^1.0.1",
-    "remark": "^4.2.1",
-    "remark-lint": "^3.2.0",
-    "remark-lint-code": "^1.0.0",
-    "remark-normalize-headings": "^0.3.0",
-    "remark-slug": "^4.1.0",
-    "remark-squeeze-paragraphs": "^3.0.0",
-    "remark-textr": "^2.0.1",
-    "remark-validate-links": "^3.0.0",
-    "remark-yaml": "^2.0.1",
-    "typographic-base": "^1.0.4",
-    "typographic-numbers": "^2.0.1"
+    "gulp-textr": "^1.0.1"
   },
   "license": "CC-BY-SA-4.0"
 }
