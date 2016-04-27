@@ -11,16 +11,16 @@
     "closeATX": false,
     "looseTable": false,
     "spacedTable": true,
-    "fence": "`",
+    "fence": '`',
     "fences": true,
-    "bullet": "-",
-    "listItemIndent": "1",
+    "bullet": '-',
+    "listItemIndent": '1',
     "incrementListMarker": true,
-    "rule": "-",
+    "rule": '-',
     "ruleRepetition": 3,
     "ruleSpaces": false,
-    "strong": "_",
-    "emphasis": "_",
+    "strong": '_',
+    "emphasis": '_',
     "position": true
   },
   "plugins": {
@@ -36,8 +36,8 @@
       "external": ["remark-lint-no-empty-sections"],
       "blockquote-indentation": 2,
       "checkbox-character-style": {
-        "checked": 'x',
-        "unchecked": ' '
+        "checked": "x",
+        "unchecked": " "
       },
       "code-block-style": 'fenced',
       "emphasis-marker": '_',
@@ -48,7 +48,7 @@
       "file-extension": 'md',
       "first-heading-level": false,
       "heading-style": 'atx',
-      "link-title-style": '"',
+      "link-title-style": '\"',
       "list-item-indent": 'space',
       "list-item-spacing": false,
       "maximum-heading-length": false,
