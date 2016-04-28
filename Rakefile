@@ -1,4 +1,5 @@
-# encoding: UTF-8, frozen_string_literal: true
+# encoding: UTF-8
+# frozen_string_literal: true
 require 'html-proofer'
 require 'yaml'
 
