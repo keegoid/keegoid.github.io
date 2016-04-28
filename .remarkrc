@@ -1,71 +1,69 @@
 {
   "settings": {
-    "bullet": "*",
-    "emphasis": "*",
-    "strong": "*",
-    "fence": "`",
-    "rule": "-",
-    "ruleSpaces": false,
-    "ruleRepetition": 3,
     "gfm": true,
     "yaml": true,
-    "footnotes": true,
-    "listItemIndent": "1",
     "commonmark": false,
-    "pedantic": false,
+    "footnotes": true,
+    "pedantic": true,
+    "breaks": false,
     "entities": false,
+    "setext": false,
+    "closeATX": false,
+    "looseTable": false,
+    "spacedTable": true,
+    "fence": "`",
     "fences": true,
-    "spacedTable": true
+    "bullet": "-",
+    "listItemIndent": "1",
+    "incrementListMarker": true,
+    "rule": "-",
+    "ruleRepetition": 3,
+    "ruleSpaces": false,
+    "strong": "_",
+    "emphasis": "_",
+    "position": true
   },
   "plugins": {
-    "remark-yaml": {},
-    "remark-squeeze-paragraphs": {},
-    "remark-slug": {},
-    "remark-heading-gap": {
-      "2": {
-        "before": "",
-        "after": ""
-      },
-    "validate-links": {}
-    },
-    "remark-inline-links": {},
-    "remark-textr": {
-      "options": {
-        "locale": "en-us"
-      },
-      "plugins": [
-        "typographic-em-dashes",
-        "typographic-en-dashes",
-        "typographic-single-spaces"
-      ]
-    },
-    "remark-lint": {
+    "lint": {
+      "external": ["remark-lint-code"],
+      "external": ["remark-lint-no-empty-sections"],
       "blockquote-indentation": 2,
       "checkbox-character-style": {
         "checked": "x",
         "unchecked": " "
       },
       "code-block-style": "fenced",
-      "fenced-code-marker": "`",
+      "emphasis-marker": "_",
       "fenced-code-flag": {
         "allowEmpty": true
       },
-      "emphasis-marker": "*",
+      "fenced-code-marker": "`",
       "file-extension": "md",
+      "first-heading-level": false,
       "heading-style": "atx",
+      "link-title-style": "\"",
+      "list-item-indent": "space",
+      "list-item-spacing": false,
+      "maximum-heading-length": false,
+      "maximum-line-length": false,
+      "no-html": false,
+      "no-literal-urls": false,
       "ordered-list-marker-style": ".",
       "ordered-list-marker-value": "ordered",
       "rule-style": "---",
-      "strong-marker": "*",
-      "unordered-list-marker-style": "*",
-      "maximum-line-length": false,
-      "list-item-indent": "space",
+      "strong-marker": "_",
       "table-cell-padding": "padded",
-      "no-literal-urls": false,
-      "list-item-spacing": false,
-      "first-heading-level": false,
-      "no-html": false,
-      "maximum-heading-length": false
+      "unordered-list-marker-style": "-"
+    },
+    "inline-links": {},
+    "validate-links": {},
+    "normalize-headings": {},
+    "textr": {
+      "options": { "locale": "en-us" },
+      "plugins": [
+        "typographic-base",
+        "typographic-numbers"
+      ]
     }
   }
 }

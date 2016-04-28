@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 # build site locally and run
-# run this script from root of project
 
 set -e
 
 title() {
     echo
-    echo "-------------------------------"
-    echo "$1"
-    echo "-------------------------------"
+    echo " --------------------------  $1"
     echo
 }
 
@@ -17,9 +14,9 @@ script/branding
 # shellcheck disable=SC2155
 export JEKYLL_GITHUB_TOKEN=$(cat ~/.token)
 
-title "starting server"
-#JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true \
-JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" bundle exec jekyll serve -w --config _config.yml,_config_local.yml --drafts --incremental
+title "STARTING SERVER"
+JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true \
+bundle exec jekyll serve --watch --config _config.yml,_config_local.yml --drafts --incremental
 
-title "cleaning up"
+title "CLEANING UP"
 bundle exec jekyll clean

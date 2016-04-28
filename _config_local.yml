@@ -1,2 +1,4 @@
+# for jekyll-feed plugin
+# site.github.url is a jekyll-metadata plugin variable
 github:
-  url: http://localhost:4000
+  url: "http://localhost:4000"

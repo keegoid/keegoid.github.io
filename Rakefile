@@ -1,3 +1,5 @@
+# encoding: UTF-8
+# frozen_string_literal: true
 require 'html-proofer'
 require 'yaml'
 
@@ -25,7 +27,7 @@ def build_site
 end
 
 def doctor_site
-  sh 'bundle exec jekyll doctor --config _config.yml,_config_test.yml --drafts'
+  sh 'bundle exec jekyll doctor'
 end
 
 def html_proofer
@@ -35,7 +37,6 @@ end
 
 task :test do
   if ENV['CI']
-    # config
     # coverage
     build_site
     doctor_site

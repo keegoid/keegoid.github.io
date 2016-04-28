@@ -1,5 +1,18 @@
 AllCops:
   Exclude:
-    - _site/**/*
-    - node_modules/**/*
-    - vendor/**/*
+    - '_site/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.1
+
+Style/Encoding:
+  Enabled: true
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always

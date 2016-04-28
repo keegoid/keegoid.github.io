@@ -12,7 +12,7 @@ name: Keegan Mullaney
 title: Keegoid
 email: keeganmullaney@gmail.com
 description: > # this means to ignore newlines
-  The open source / public writing site for Keegan Mullaney.
+  The open source website for Keegan Mullaney.
 author: keegoid
 repository: keegoid/keegoid.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -32,7 +32,7 @@ defaults:
 # RDFa structured data
 job_title: IT Administrator
 employer: KM Authorized LLC
-url: "http://keegoid.github.io"
+url: "http://keegoid.com"
 location:
   city: Chongqing
   province: Chongqing
@@ -73,6 +73,7 @@ twitter:
 
 # build config
 timezone: Asia/Shanghai
+lang: en-US
 branch: master
 permalink: pretty
 rss_limit: 10
@@ -104,7 +105,12 @@ gems:
 
 #files to exclude, array
 exclude:
+  # - ".bundle"
+  # - bundle
+  - node_modules
   - script
+  # - src
+  - vendor
   - CNAME
   - CONTRIBUTING.md
   - Gemfile
@@ -113,3 +119,4 @@ exclude:
   - README.md
   - Rakefile
   - gulpfile.js
+  - package.json

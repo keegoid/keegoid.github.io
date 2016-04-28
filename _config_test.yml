@@ -1,14 +1,19 @@
+# for testing on Travis-CI
 url: ""
 
 proofer:
   url_ignore:
+    - "#"
     - "#comments"
     - !ruby/regexp '/https?:\/\/(www)?\.youtube\.com\/watch\?v=.*/i'
-    - http://keegoid.github.io/404/
+    - http://keegoid.com/404/
     - /edit/master/404.html
   check_html: true
 
-github:
-  repository_nwo: "keegoid/keegoid.github.io"
-  owner_url: "https://github.com/keegoid"
-  repository_url: "https://github.com/keegoid/keegoid.github.io"
+# uncomment this code for jekyll-github-metadata plugin
+# or set an env variable with value of ~/.token on Travis-CI
+# check script/cibuild for an example
+# github:
+#   repository_nwo: "keegoid/keegoid.github.io"
+#   owner_url: "https://github.com/keegoid"
+#   repository_url: "https://github.com/keegoid/keegoid.github.io"

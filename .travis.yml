@@ -1,21 +1,19 @@
-# before_install: npm install
-before_script: 'chmod +x script/cibuild'
-  # - 'echo "branch: $TRAVIS_BRANCH" >> _config_test.yml'
-  # - 'sed -i "s/master/$TRAVIS_BRANCH/g" _config_test.yml'
-# bundler_args: --without benchmark:site:development
-before_script: chmod +x script/cibuild
+before_install: script/nodejs
+before_script:
+  - 'echo -e "\nbranch: $TRAVIS_BRANCH" >> _config_test.yml'
+  - 'sed -i "s/master/$TRAVIS_BRANCH/g" _config_test.yml'
+# bundler_args: --without development
 script: script/cibuild
 cache: bundler
 language: ruby
-sudo: false
 rvm: 2.1.7
+sudo: false
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 branches:
   only:
   - master
-# report results
 #addons:
 #  code_climate:
 #    repo_token: 1b5b79c60cc9e7dff806178d88eb861a0855308536db2c38b50004d89b1e2ad9
