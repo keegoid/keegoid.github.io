@@ -13,6 +13,10 @@ script/branding
 
 # shellcheck disable=SC2155
 export JEKYLL_GITHUB_TOKEN=$(cat ~/.token)
+export CI=1
+
+title "CHECKING MARKDOWN"
+script/remark
 
 title "STARTING SERVER"
 JEKYLL_GITHUB_TOKEN="$(cat ~/.token)" DISABLE_WHITELIST=true \

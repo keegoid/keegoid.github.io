@@ -2,10 +2,13 @@
 
 set -e
 
-if "$CI"; then
+if [ "$CI" -eq 0 ]; then
   # ./node_modules/.bin/remark --config-path .remarkrc --no-rc ./*.md ./*/**.md
   ./node_modules/.bin/remark --config-path .remarkrc ./*.md ./*/**.md
 else
-  # ./node_modules/.bin/remark --config-path .remarkrc --output --no-rc ./*.md ./*/**.md
-  ./node_modules/.bin/remark --config-path .remarkrc --output ./*.md ./*/**.md
+  if [ -d _site ]; then
+    ./node_modules/.bin/remark -i _site --output --config-path .remarkrc ./*/**.md
+  else
+    ./node_modules/.bin/remark --output --config-path .remarkrc ./*/**.md
+  fi
 fi
