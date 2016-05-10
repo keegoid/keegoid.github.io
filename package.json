@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "remark": "^4.2.1",
-    "remark-inline-links": "^3.0.0",
+    "remark-inline-links": "^3.0.1",
     "remark-lint": "^3.2.0",
     "remark-lint-code": "^1.0.0",
     "remark-lint-no-empty-sections": "^1.0.0",
