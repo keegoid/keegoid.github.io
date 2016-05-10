@@ -13,7 +13,7 @@ script/branding
 
 # shellcheck disable=SC2155
 export JEKYLL_GITHUB_TOKEN=$(cat ~/.token)
-export CI=1
+export CI=false
 
 title "CHECKING MARKDOWN"
 script/remark
