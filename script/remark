@@ -3,9 +3,16 @@
 set -e
 
 if "$CI"; then
+  echo "$CI should equal true"
   # ./node_modules/.bin/remark --config-path .remarkrc --no-rc ./*.md ./*/**.md
   ./node_modules/.bin/remark --config-path .remarkrc ./*.md ./*/**.md
 else
-  # ./node_modules/.bin/remark --config-path .remarkrc --output --no-rc ./*.md ./*/**.md
-  ./node_modules/.bin/remark --config-path .remarkrc --output ./*.md ./*/**.md
+  echo "$CI should equal false"
+  if [ -d _site ]; then
+    echo "_site directory found...ignoring"
+    ./node_modules/.bin/remark -i _site --output --config-path .remarkrc ./*/**.md
+  else
+    echo "_site directory not found, no need to ignore it"
+    ./node_modules/.bin/remark --output --config-path .remarkrc ./*/**.md
+  fi
 fi
